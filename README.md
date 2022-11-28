@@ -1,29 +1,27 @@
 
-# Detección de asentamietos informales
-## Descripción
+# Informal settlements detection
+## Description
 
-Hoy en dia una gran fraccion de la poblacion habita en asentamientos informales, grandes aglomeraciones de viviendas que se encuentran en una situación irregular de tenencia del terreno y carecen de acceso regular a uno o más servicios básicos de la vivienda (agua potable, energía eléctrica y alcantarillado/fosa séptica)
+Nowadays a considerable portion of the population lives in informal settlements. These large housing agglomerations are in an irregular land tenure situation and lack regular access to one or more basic housing services (drinking water, electricity, and sewage/septic tank).
 
 
-Este estudio tiene como objetivo la deteccion de asentamientos informales con imagenes satelitales i/o de otras fuentes, para la posterior toma de decisiones de politicas publicas
+The goal of this study is the informal settlement detection using satellite imagery and another kind of information, for subsequent public policy decision-making.
 
-## Requerimientos
+## Requirements 
 
-Se utilizan las herramientas **GDAL** y [Orfeo Toolbox](https://www.orfeo-toolbox.org/) en la primera etapa del pre-procesamiento de los datos. Luego, se emplean nuestros paquetes [satproc](https://github.com/dymaxionlabs/satproc) y [unetseg](https://github.com/dymaxionlabs/satproc) para la generación del dataset y modelo de ML respectivamente.
+The tools **GDAL** y [Orfeo Toolbox](https://www.orfeo-toolbox.org/) are used in the first stage, the pre-processing of the data. In the following stages, our packages [satproc](https://github.com/dymaxionlabs/satproc) and [unetseg](https://github.com/dymaxionlabs/satproc) are used for dataset generation and for training and prediction process.
 
 ## Notebooks
 
-Este repositorio contiene un conjunto de notebooks de Jupyter, que describen los pasos necesarios:
+This repository has a Jupyter Notebooks set, which describes the necessary steps:
 
-1. [Entrenamiento](notebooks/1_Entrenamiento.ipynb): Se procesan las imágenes satelitales y la verdad de campo para generar el dataset de entrenamiento. Luego se entrena y evalua el modelo. 
-2. [Prediccion](notebooks/2_Prediccion.ipynb): Predicción sobre la región de interés y procesamiento de los resultados de la predicción.
+1. [Training](notebooks/1_Entrenamiento.ipynb): Satellite imagery and ground truth are processed to generate the training dataset. Then, the model is trained and evaluated.
+2. [Prediction](notebooks/2_Prediccion.ipynb): Prediction over the area of interest and prediction results processing.
 
+## :handshake: Contributions
 
-## :handshake: Contribuciones
+Bugs reports y *pull requests* could be done in the [issues page](https://github.com/dymaxionlabs/adefinir) of this repository. 
 
-Reportes de bugs y *pull requests* pueden ser reportados en la [página de issues](https://github.com/dymaxionlabs/adefinir) de este repositorio. Este proyecto está destinado a ser un espacio seguro y acogedor para la colaboración, y se espera que los contribuyentes se adhieran al código de conducta [Contributor
-Covenant](http://contributor-covenant.org).
+## :page_facing_up: License
 
-## :page_facing_up: Licencia
-
-El código está licenciado bajo Apache 2.0. Refiérase a [LICENSE.txt](LICENSE.txt).
+The code is licensed under Apache 2.0. Refer to [LICENSE.txt](LICENSE.txt).
