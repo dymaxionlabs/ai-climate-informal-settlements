@@ -1,5 +1,5 @@
-
 # Informal settlements detection
+
 ## Description
 
 Nowadays a considerable portion of the population lives in informal settlements. These large housing agglomerations are in an irregular land tenure situation and lack regular access to one or more basic housing services (drinking water, electricity, and sewage/septic tank).
